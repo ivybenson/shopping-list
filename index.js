@@ -18,15 +18,15 @@ function shoppingList (){
          });
 
     
-    $('.shopping-item-delete').on('click','button',function(e){
-      e.preventDefault();
-      $(e.target).parent.remove();
-      )};
-      
-    $('.shopping-item-toggle').on('click','button',function(e){
-      e.preventDefault();
-      $(e.target).toggleClass();
-      });
+   $('.shopping-list').on('click','shopping-item-delete',function(e){
+  e.preventDefault();
+  $(e.target).parent.remove();
+  });
+  
+$('.shopping-list').on('click','shopping-item-toggle',function(e){
+  e.preventDefault();
+  $(e.target).toggleClass();
+  });
       
     }
    
